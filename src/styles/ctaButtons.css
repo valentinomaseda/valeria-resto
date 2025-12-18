@@ -1,0 +1,46 @@
+.ctaContainer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 40px 20px;
+}
+
+.btnPrimary,
+.btnSecondary {
+  padding: 1rem 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+/* Botón WhatsApp */
+.btnPrimary {
+  background-color: #a68966;
+  color: white;
+  border: 1px solid #a68966;
+}
+
+.btnPrimary:hover {
+  background-color: #4a3728;
+  border-color: #4a3728;
+  transform: translateY(-3px);
+  color: #f5f1ee;
+}
+
+/* Botón PDF */
+.btnSecondary {
+  background-color: transparent;
+  color: #a68966;
+  border: 1px solid #a68966;
+}
+
+.btnSecondary:hover {
+  background-color: #f5f1ee;
+  transform: translateY(-3px);
+  color: #4a3728;
+}

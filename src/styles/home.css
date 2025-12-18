@@ -3,6 +3,15 @@
   color: #4a3728;
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
+  /* Un color crema más cálido y profundo */
+  background-color: #f8f5f2; 
+  /* Añade una textura de ruido sutilísima */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  background-blend-mode: overlay;
+  opacity: 0.98; /* Suaviza el efecto */
+  color: #4a3728;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
 }
 
 .sectionPadding {
@@ -27,3 +36,8 @@
   background-color: #a68966;
   margin: 0 auto 40px;
 }
+
+section[id] {
+  scroll-margin-top: 80px; /* Ajusta este valor según la altura de tu Navbar */
+}
+

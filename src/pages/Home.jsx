@@ -1,27 +1,49 @@
-// pages/Home.jsx
+// src/pages/Home.jsx
 import '../styles/home.css';
 import Navbar from '../components/NavBar';
 import Hero from '../components/Hero';
-import MenuPreview from '../components/MenuPreview';
+import FeaturedDishes from '../components/FeaturedDishes';
+import Gallery from '../components/Gallery';
+import CTAButtons from '../components/CTAButtons';
 import Footer from '../components/Footer';
 import useScrollAnimation from '../hooks/useScrollAnimation';
+import Map from '../components/Map';
 
 const Home = () => {
   useScrollAnimation();
 
   return (
-    <div className="container">
+    <div className="container" id="inicio"> {/* ID para el inicio */}
       <Navbar />
       <main>
+        {/* Sección de Portada */}
         <div className="animate-on-scroll">
           <Hero />
         </div>
-        <section className="sectionPadding animate-on-scroll">
+
+        {/* Sección de Reservas y Menú PDF */}
+        <section id="reservas" className="animate-on-scroll">
+          <CTAButtons />
+        </section>
+
+        {/* Sección de Galería del Lugar */}
+        <section id="nosotros" className="sectionPadding animate-on-scroll">
+          <h2 className="title">Nuestro Espacio</h2>
+          <div className="divider"></div>
+          <Gallery />
+        </section>
+
+        {/* Sección de Platos Destacados */}
+        <section id="menu" className="sectionPadding animate-on-scroll">
           <h2 className="title">Sugerencias del Chef</h2>
           <div className="divider"></div>
-          <MenuPreview />
+          <FeaturedDishes />
         </section>
+        
+        {/* Sección de Mapa */}
+        <Map />
       </main>
+      
       <div className="animate-on-scroll">
         <Footer />
       </div>

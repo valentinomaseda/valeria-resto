@@ -1,0 +1,26 @@
+/* src/styles/map.css */
+.mapSection {
+    padding: 60px 20px;
+    background-color: transparent; /* Mantiene el fondo sutil del home */
+    text-align: center;
+}
+
+.mapContainer {
+    max-width: 1100px;
+    margin: 40px auto 0;
+    border: 1px solid rgba(166, 137, 102, 0.3); /* Borde dorado sutil */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    /* Efecto elegante: el mapa se aclara al pasar el mouse */
+    filter: grayscale(0.5) contrast(0.9);
+    transition: filter 0.5s ease;
+}
+
+.mapContainer:hover {
+    filter: grayscale(0);
+}
+
+.mapContainer iframe {
+    display: block;
+}
