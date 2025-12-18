@@ -1,30 +1,36 @@
 // src/pages/Home.jsx
-import '../styles/home.css';
-import Navbar from '../components/NavBar';
-import Hero from '../components/Hero';
-import FeaturedDishes from '../components/FeaturedDishes';
-import Gallery from '../components/Gallery';
-import CTAButtons from '../components/CTAButtons';
-import Footer from '../components/Footer';
-import useScrollAnimation from '../hooks/useScrollAnimation';
-import Map from '../components/Map';
+import "../styles/home.css";
+import Navbar from "../components/NavBar";
+import Hero from "../components/Hero";
+import FeaturedDishes from "../components/FeaturedDishes";
+import Gallery from "../components/Gallery";
+import CTAButtons from "../components/CTAButtons";
+import Footer from "../components/Footer";
+import useScrollAnimation from "../hooks/useScrollAnimation";
+import Map from "../components/Map";
+import BackgroundSlider from "../components/BackgroundSlider";
 
 const Home = () => {
   useScrollAnimation();
 
   return (
-    <div className="container" id="inicio"> {/* ID para el inicio */}
+    <div className="container" id="inicio">
+      {" "}
+      {/* ID para el inicio */}
       <Navbar />
       <main>
-        {/* Sección de Portada */}
-        <div className="animate-on-scroll">
-          <Hero />
-        </div>
+        <div
+          className="heroContainer hero-wrapper animate-on-scroll"
+          id="reservas"
+        >
+          <BackgroundSlider />
 
-        {/* Sección de Reservas y Menú PDF */}
-        <section id="reservas" className="animate-on-scroll">
-          <CTAButtons />
-        </section>
+          {/* Este contenedor centra el logo y los botones sobre el slider */}
+          <div className="hero-content-overlay">
+            <Hero />
+            <CTAButtons />
+          </div>
+        </div>
 
         {/* Sección de Galería del Lugar */}
         <section id="nosotros" className="sectionPadding animate-on-scroll">
@@ -39,7 +45,7 @@ const Home = () => {
           <div className="divider"></div>
           <FeaturedDishes />
         </section>
-        
+
         {/* Sección de Mapa */}
         <section id="mapa" className="sectionPadding animate-on-scroll">
           <h2 className="title">Dónde Encontrarnos</h2>
@@ -47,7 +53,6 @@ const Home = () => {
           <Map />
         </section>
       </main>
-      
       <div className="animate-on-scroll">
         <Footer />
       </div>

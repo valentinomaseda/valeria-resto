@@ -41,3 +41,23 @@ section[id] {
   scroll-margin-top: 80px; /* Ajusta este valor según la altura de tu Navbar */
 }
 
+/* src/styles/home.css */
+
+.hero-wrapper {
+  position: relative;
+  min-height: 100vh; /* Ocupa toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-content-overlay {
+  position: relative;
+  z-index: 2; /* Por encima del overlay oscuro del slider */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Espacio entre el texto del hero y los botones */
+}

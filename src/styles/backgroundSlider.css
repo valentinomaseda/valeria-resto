@@ -1,0 +1,46 @@
+/* src/styles/BackgroundSlider.css */
+
+/* El contenedor principal que se asegura de ocupar todo el espacio detrás */
+.slider-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Importante: Para que quede detrás del contenido */
+    overflow: hidden;
+}
+
+/* Necesario para que Swiper ocupe toda la altura */
+.mySwiper {
+    width: 100%;
+    height: 100%;
+}
+
+/* La imagen en sí */
+.slide-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    /* Un pequeño zoom lento hace que se vea más dinámico */
+    animation: slowZoom 8s infinite alternate;
+}
+
+/* La capa oscura encima de la imagen */
+.slide-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Ajusta el 0.6 para hacerlo más claro u oscuro */
+    background-color: rgba(0, 0, 0, 0.65); 
+    z-index: 1;
+}
+
+/* Animación opcional de zoom lento */
+@keyframes slowZoom {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+}
