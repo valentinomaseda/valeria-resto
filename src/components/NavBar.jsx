@@ -1,5 +1,6 @@
 import '../styles/navbar.css';
 
+// Navigation Bar Component
 const Navbar = () => (
   <nav className="navContainer">
     <ul className="navList">
