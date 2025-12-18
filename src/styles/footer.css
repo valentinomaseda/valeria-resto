@@ -1,0 +1,28 @@
+.footerContainer {
+  background-color: #FDFCFB;
+  padding: 60px 20px;
+  border-top: 1px solid rgba(166, 137, 102, 0.2);
+  text-align: center;
+}
+
+.address {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  color: #4A3728;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.phone {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #A68966;
+  margin-bottom: 1.5rem;
+}
+
+.social {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #4A3728;
+}

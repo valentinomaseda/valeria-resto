@@ -1,0 +1,29 @@
+.container {
+  background-color: #fdfcfb;
+  color: #4a3728;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+}
+
+.sectionPadding {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Cormorant Garamond', serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #a68966;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.divider {
+  width: 60px;
+  height: 2px;
+  background-color: #a68966;
+  margin: 0 auto 40px;
+}

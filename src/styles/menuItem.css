@@ -1,0 +1,54 @@
+.itemContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+/* Fila superior: Nombre - Conector - Precio */
+.headerRow {
+  display: flex;
+  align-items: baseline; /* Alinea el texto con la línea conectora */
+  justify-content: space-between;
+}
+
+.name {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #4A3728; /* Marrón oscuro de la carta */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap; /* Evita que el nombre salte de línea */
+}
+
+/* La línea que une el nombre con el precio */
+.connector {
+  flex-grow: 1;
+  border-bottom: 1px solid #A68966; /* Dorado sutil */
+  margin: 0 15px;
+  position: relative;
+  top: -4px; /* Ajuste fino para que quede centrado respecto al texto */
+}
+
+.price {
+  background-color: #A68966; /* Fondo ocre/dorado */
+  color: #FDFCFB; /* Texto crema */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 3px 12px;
+  min-width: 80px;
+  text-align: center;
+}
+
+/* Descripción del plato */
+.description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  color: #7A6652; /* Marrón más claro para la descripción */
+  margin-top: 5px;
+  line-height: 1.4;
+  font-style: italic;
+  max-width: 85%; /* Para que no choque visualmente con el precio */
+}
