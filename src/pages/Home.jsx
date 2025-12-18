@@ -41,7 +41,11 @@ const Home = () => {
         </section>
         
         {/* Sección de Mapa */}
-        <Map />
+        <section id="mapa" className="sectionPadding animate-on-scroll">
+          <h2 className="title">Dónde Encontrarnos</h2>
+          <div className="divider"></div>
+          <Map />
+        </section>
       </main>
       
       <div className="animate-on-scroll">

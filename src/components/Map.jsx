@@ -13,8 +13,6 @@ const Map = () => {
 
   return (
     <section id="ubicacion" className="mapSection animate-on-scroll">
-      <h2 className="title">Dónde Encontrarnos</h2>
-      <div className="divider"></div>
       <div className="mapContainer">
         <iframe
           src={embedUrl}
