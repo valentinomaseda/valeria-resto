@@ -17,7 +17,7 @@
   height: 100%;
   overflow: hidden;
   border-radius: 12px;
-  cursor: pointer;
+  cursor: crosshair;
   transition: flex 0.6s cubic-bezier(0.25, 1, 0.5, 1); /* Transición suave */
   border: 1px solid rgba(166, 137, 102, 0.2);
 }

@@ -1,28 +1,103 @@
-.footerContainer {
-  background-color: #FDFCFB;
-  padding: 60px 20px;
+/* src/styles/footer.css */
+
+.footerMain {
+  background-color: #FDFCFB; /* Fondo crema suave para contraste */
+  padding: 80px 20px 30px;
   border-top: 1px solid rgba(166, 137, 102, 0.2);
+  color: #4A3728;
+}
+
+.footerContent {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footerColumn {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
-.address {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.75rem;
-  color: #4A3728;
-  letter-spacing: 1px;
-  margin-bottom: 0.5rem;
+.footerColumn:first-child {
+  justify-content: center;
 }
 
-.phone {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  color: #A68966;
-  margin-bottom: 1.5rem;
+/* Mini Logo del Footer */
+.footerLogo {
+  width: 200px;
 }
 
-.social {
+.logoV {
   font-family: 'Cormorant Garamond', serif;
-  font-style: italic;
+  color: #A68966;
+  font-weight: 700;
+  transform: rotate(-45deg);
+}
+
+.footerBrand {
+  font-family: 'Cormorant Garamond', serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.footerTagline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-top: 5px;
+}
+
+/* Títulos de Columnas */
+.columnTitle {
+  font-family: 'Cormorant Garamond', serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #A68966;
+  margin-bottom: 20px;
   font-size: 1.1rem;
+}
+
+.footerText, .footerPhone {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+.footerSocials a {
+  text-decoration: none;
   color: #4A3728;
+  font-weight: 600;
+  border-bottom: 1px solid #A68966;
+  transition: opacity 0.3s;
+}
+
+.footerSocials a:hover {
+  opacity: 0.7;
+}
+
+/* Copyright Section */
+.footerBottom {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(166, 137, 102, 0.1);
+  text-align: center;
+  font-size: 0.75rem;
+  opacity: 0.5;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .footerContent {
+    flex-direction: column;
+  }
 }
